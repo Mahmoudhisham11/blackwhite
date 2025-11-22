@@ -1397,8 +1397,7 @@ const handleReturnUI = async (item) => {
                       <td>{item.quantity}</td>
                       <td>{item.serial || "-"}</td>
                       <td>
-                        {(userName === 'mostafabeso10@gmail.com' || userName === 'medo') && (
-                          <button
+                        <button
                             className={styles.returnBtn}
                             disabled={returning === idx} 
                             onClick={() => {
@@ -1408,7 +1407,6 @@ const handleReturnUI = async (item) => {
                           >
                             {returning === idx ? "جارٍ التنفيذ..." : "مرتجع"} 
                           </button>
-                        )}
                       </td>
                     </tr>
                   ))}

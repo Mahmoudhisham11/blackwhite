@@ -64,20 +64,16 @@ function SideBar({openSideBar, setOpenSideBar}) {
                     <span><TbReportSearch/></span>
                     <span>تقفيلة اليوم</span>
                 </Link>
-                {typeof window !== 'undefined' && localStorage.getItem('userName') === "mostafabeso10@gmail.com" && 
-                  <Link href={'/profit'} className={styles.actionLinks}>
+                <Link href={'/profit'} className={styles.actionLinks}>
                     <span><TbReportSearch/></span>
                     <span>الارباح</span>
                 </Link>  
-                }
             </div>
             <div className={styles.logout}>
-                {typeof window !== 'undefined' && localStorage.getItem('userName') === "mostafabeso10@gmail.com" && 
-                  <Link href={'/settings'} className={styles.actionLinks}>
+                <Link href={'/settings'} className={styles.actionLinks}>
                     <span><TbReportSearch/></span>
                     <span>الاعدادات</span>
                 </Link>  
-                }
                 <Link href={'/'} className={styles.actionLinks} onClick={handleLogout}>
                     <span><BiLogOutCircle/></span>
                     <span>تسجيل الخروج</span>
